@@ -1,0 +1,212 @@
+@media (max-width: 1640px) {
+    html {
+        font-size: 8px;
+    }
+
+    main.main__wrapper p.main__title {
+        width: 120px;
+    }
+}
+
+
+// 1024 BREAK POINT
+
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 8px;
+    }
+
+    nav.title__nav.collapse {
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        display: none;
+        z-index: 1;
+        transition: 1s linear;
+        padding-left: 15em;
+        padding-top: 25em;
+        ul {
+            flex-direction: column;
+    
+            font-size: 4.5rem;
+        }
+    
+    
+    }
+    button.nav__activator {
+        display: block;
+    }
+
+    main.main__wrapper {
+
+        // justify-content: flex-end;
+        p.main__title {
+            display: none;
+        }
+
+        div.wrapper__imagebox {
+            display: none;
+        }
+
+
+        div.wrapper__textbox {
+            flex-basis: 100%;
+            padding-left: 20em;
+            text-align: justify;
+
+            h1 {
+                font-size: 10rem;
+            }
+
+            h4 {
+                top: 40%;
+                font-size: 4rem;
+            }
+
+            p.textbox__subinfo {
+                display: block;
+                margin-top: 2em;
+                top: 60%;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    nav.title__nav.collapse-active {
+        display: block;
+    }
+    
+
+    section form {
+        width: 80%;
+
+        .form__box {
+            width: 100%;
+            height: auto;
+            display: flex;
+
+            div {
+
+
+                .form__input {
+
+                    font-size: 2.8rem;
+                }
+            }
+
+            textarea {
+
+                font-size: 2.8rem;
+            }
+
+            .form__checkbox {
+                font-size: 2.8rem;
+
+            }
+
+            button {
+                font-size: 2.8rem;
+
+            }
+
+
+        }
+    }
+
+        section.section__wrapper,
+        footer.footer__wrapper {
+            .wrapper__flexbox {
+                flex-direction: column;
+
+                .flexbox__item {
+                    flex-basis: 95%;
+                    flex-wrap: wrap;
+                    padding: 1em 1.5em;
+
+                    i {
+                        font-size: 8rem;
+                    }
+
+                    h3 {
+                        font-size: 6rem;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 2.5rem;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        footer.footer__wrapper {
+
+
+            .wrapper__flexbox {
+
+
+
+                .flexbox__item {
+
+
+                    h4 {
+                        font-size: 3.5rem;
+                    }
+
+                    div.flexbox__iconbox {
+                        font-size: 1.2rem;
+
+
+                        i {
+
+                            font-size: 3.5rem;
+
+                        }
+                    }
+
+                    p {
+                        font-size: 2.5em;
+                    }
+
+                    input {
+                        width: 80%;
+                        font-size: 1.2rem;
+                    }
+
+                    button {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+///// 764 BREAKPOINT 
+
+@media (max-width:760px) {
+    html {
+        font-size: 6px;
+    }
+    div.form__box {
+        // flex-direction: column;
+            div {
+                flex-direction: column;
+            }
+}
+    main.main__wrapper div.wrapper__textbox {
+        padding: 4em;
+            h1 {
+                text-align: center;
+            }
+    }
+}

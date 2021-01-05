@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+section.page__title {
+  position: relative;
+  background-image: url(/assets/images/img-05.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  opacity: 0.8;
+}
+
+nav.title__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20vw;
+}
+
+nav.title__nav ul li {
+  padding: .5em;
+  font-size: 2rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+nav.title__nav ul li a {
+  display: block;
+  color: white;
+}
+
+button.nav__activator {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: .5em .75em;
+  display: none;
+  z-index: 2;
+}
+
+button.nav__activator i {
+  font-size: 4rem;
+  color: white;
+}
+
+button.nav__activator.collapse-active {
+  -webkit-transform: rotate(-45deg) scale(1.25);
+          transform: rotate(-45deg) scale(1.25);
+  border: transparent;
+}
+
+nav.title__nav.collapse-active {
+  display: block;
+}
+
+nav > ul > li:nth-of-type(2) {
+  border: 1px solid white;
+}
+
+nav > ul > li:nth-of-type(2):hover {
+  background-color: darkcyan;
+}
+
+section.page__title div.title__textbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+section.page__title div.title__textbox .textbox__title {
+  font-size: 10rem;
+}
+
+section.page__title div.title__textbox .textbox__subinfo {
+  font-size: 4rem;
+  margin-bottom: 1em;
+}
+
+section.page__title div.title__textbox .textbox__button {
+  border: 1px solid white;
+  font-size: 3rem;
+  color: white;
+  padding: 0.5em;
+}
+
+section.page__title div.title__textbox .textbox__button > a:hover .textbox__button {
+  background-color: darkcyan;
+}
+
+section.section__wrapper,
+footer.footer__wrapper {
+  margin-top: 10vh;
+  width: 100%;
+  min-height: 40vh;
+}
+
+section.section__wrapper h1,
+footer.footer__wrapper h1 {
+  text-align: center;
+}
+
+section.section__wrapper h1::after,
+footer.footer__wrapper h1::after {
+  content: "";
+  display: block;
+  background-color: #66c0b3;
+  height: 3px;
+  margin: 10px auto;
+  width: 70px;
+}
+
+section.section__wrapper .wrapper__flexbox,
+footer.footer__wrapper .wrapper__flexbox {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: 5vh auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.section__wrapper .wrapper__flexbox .flexbox__item,
+footer.footer__wrapper .wrapper__flexbox .flexbox__item {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1em 1.5em;
+}
+
+section.section__wrapper .wrapper__flexbox .flexbox__item i,
+footer.footer__wrapper .wrapper__flexbox .flexbox__item i {
+  font-size: 6rem;
+}
+
+section.section__wrapper .wrapper__flexbox .flexbox__item h3,
+footer.footer__wrapper .wrapper__flexbox .flexbox__item h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+section.section__wrapper .wrapper__flexbox .flexbox__item p,
+footer.footer__wrapper .wrapper__flexbox .flexbox__item p {
+  font-size: 1.5rem;
+}
+
+section.section__wrapper .wrapper__flexbox .flexbox__item img,
+footer.footer__wrapper .wrapper__flexbox .flexbox__item img {
+  width: 100%;
+  height: 100%;
+}
+
+main.main__wrapper {
+  width: 100vw;
+  background-color: #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  z-index: 0;
+}
+
+main.main__wrapper p.main__title {
+  position: absolute;
+  font-size: 10rem;
+  left: 45%;
+  top: 10%;
+  word-break: break-all;
+  width: 150px;
+  color: #6d6b6b;
+  font-weight: bold;
+}
+
+main.main__wrapper div.wrapper__imagebox {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main.main__wrapper div.wrapper__imagebox img {
+  width: 100%;
+  height: 100%;
+}
+
+main.main__wrapper div.wrapper__textbox {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 2em 10vw 2em 6em;
+}
+
+main.main__wrapper div.wrapper__textbox h1 {
+  margin-top: 1.5em;
+  font-size: 8rem;
+}
+
+main.main__wrapper div.wrapper__textbox h1::after {
+  content: "";
+  display: block;
+  background-color: #66c0b3;
+  height: 3px;
+  margin: 10px 0;
+  width: 70px;
+}
+
+main.main__wrapper h4 {
+  top: 40%;
+  font-size: 4rem;
+}
+
+main.main__wrapper p.textbox__subinfo {
+  display: block;
+  margin-top: 2em;
+  top: 60%;
+  font-size: 2rem;
+}
+
+section.map__wrapper {
+  width: 100%;
+  min-height: 50vh;
+}
+
+section form {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
+section form .form__box {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section form .form__box div {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section form .form__box div .form__input {
+  padding: .5em;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  font-size: 1.8rem;
+}
+
+section form .form__box textarea {
+  margin: .5em 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.8rem;
+}
+
+section form .form__box .form__checkbox {
+  font-size: 1.8rem;
+  padding: .5em;
+}
+
+section form .form__box button {
+  font-size: 1.8rem;
+  padding: .25em .5em;
+  background-color: #8acfc5;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section form .form__box a.form__btn {
+  display: block;
+  padding: .25em .5em;
+  margin-left: 5%;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 5vh;
+  border: 1px solid #8acfc5;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section form .form__box button:hover {
+  background-color: black;
+}
+
+section form .form__box a.form__btn:hover {
+  background-color: #8acfc5;
+  color: white;
+}
+
+footer.footer__wrapper {
+  background-color: #8acfc5;
+  min-height: 20vh;
+}
+
+footer.footer__wrapper .wrapper__flexbox {
+  height: 80%;
+  color: white;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+footer.footer__wrapper .wrapper__flexbox .flexbox__item {
+  margin-top: 2em;
+}
+
+footer.footer__wrapper .wrapper__flexbox .flexbox__item h4 {
+  font-size: 2.5rem;
+}
+
+footer.footer__wrapper .wrapper__flexbox .flexbox__item div.flexbox__iconbox {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer.footer__wrapper .wrapper__flexbox .flexbox__item div.flexbox__iconbox i {
+  margin-top: 2em;
+  font-size: 2.5rem;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+footer.footer__wrapper .wrapper__flexbox .flexbox__item p {
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+footer.footer__wrapper .wrapper__flexbox .flexbox__item input {
+  margin-top: 2em;
+  padding: 1.5em;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+footer.footer__wrapper .wrapper__flexbox .flexbox__item button {
+  font-size: 1.2rem;
+  padding: 1.5em;
+  line-height: 130%;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

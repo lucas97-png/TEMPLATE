@@ -1,0 +1,158 @@
+@media (max-width: 1640px) {
+  html {
+    font-size: 8px;
+  }
+  main.main__wrapper p.main__title {
+    width: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+  nav.title__nav.collapse {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    display: none;
+    z-index: 1;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    padding-left: 15em;
+    padding-top: 25em;
+  }
+  nav.title__nav.collapse ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 4.5rem;
+  }
+  button.nav__activator {
+    display: block;
+  }
+  main.main__wrapper p.main__title {
+    display: none;
+  }
+  main.main__wrapper div.wrapper__imagebox {
+    display: none;
+  }
+  main.main__wrapper div.wrapper__textbox {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 20em;
+    text-align: justify;
+  }
+  main.main__wrapper div.wrapper__textbox h1 {
+    font-size: 10rem;
+  }
+  main.main__wrapper div.wrapper__textbox h4 {
+    top: 40%;
+    font-size: 4rem;
+  }
+  main.main__wrapper div.wrapper__textbox p.textbox__subinfo {
+    display: block;
+    margin-top: 2em;
+    top: 60%;
+    font-size: 2rem;
+  }
+  nav.title__nav.collapse-active {
+    display: block;
+  }
+  section form {
+    width: 80%;
+  }
+  section form .form__box {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section form .form__box div .form__input {
+    font-size: 2.8rem;
+  }
+  section form .form__box textarea {
+    font-size: 2.8rem;
+  }
+  section form .form__box .form__checkbox {
+    font-size: 2.8rem;
+  }
+  section form .form__box button {
+    font-size: 2.8rem;
+  }
+  section.section__wrapper .wrapper__flexbox,
+  footer.footer__wrapper .wrapper__flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.section__wrapper .wrapper__flexbox .flexbox__item,
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item {
+    -ms-flex-preferred-size: 95%;
+        flex-basis: 95%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1em 1.5em;
+  }
+  section.section__wrapper .wrapper__flexbox .flexbox__item i,
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item i {
+    font-size: 8rem;
+  }
+  section.section__wrapper .wrapper__flexbox .flexbox__item h3,
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item h3 {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+  section.section__wrapper .wrapper__flexbox .flexbox__item p,
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item p {
+    font-size: 2.5rem;
+  }
+  section.section__wrapper .wrapper__flexbox .flexbox__item img,
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item img {
+    width: 100%;
+    height: 100%;
+  }
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item h4 {
+    font-size: 3.5rem;
+  }
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item div.flexbox__iconbox {
+    font-size: 1.2rem;
+  }
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item div.flexbox__iconbox i {
+    font-size: 3.5rem;
+  }
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item p {
+    font-size: 2.5em;
+  }
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item input {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  footer.footer__wrapper .wrapper__flexbox .flexbox__item button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 6px;
+  }
+  div.form__box div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.main__wrapper div.wrapper__textbox {
+    padding: 4em;
+  }
+  main.main__wrapper div.wrapper__textbox h1 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=media.css.map */
